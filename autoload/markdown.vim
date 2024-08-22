@@ -61,6 +61,7 @@ function! s:LiveServer.start(root, index_path)
     let index = fnamemodify(a:index_path, ':t')
     let self.pid = jobstart([
           \ 'live-server',
+          \ '--browser='.g:nvim_markdown_preview_browser,
           \ '--quiet',
           \ '--mount='.'/:'.mount_path,
           \ '--open='.index,

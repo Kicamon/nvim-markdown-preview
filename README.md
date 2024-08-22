@@ -100,6 +100,11 @@ The default is `gfm` (GitHub flavored markdown).
 let g:nvim_markdown_preview_format = 'markdown'
 ```
 
+Set this variable to specify the preview browser.
+```vim
+let g:nvim_markdown_preview_browser = 'chorme'
+```
+
 Take a look at `:help nvim-markdown-preview` for complete documentation and examples.
 
 ## Screenshots
